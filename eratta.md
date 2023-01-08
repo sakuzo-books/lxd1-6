@@ -58,3 +58,41 @@
   [root@centos7-lb31 conf.d]#
   ```
 
+* P92 : 9.2 Sambaの設定変更をする  
+  smb.conf の `ldap group suffix` の指定が間違っている  
+  
+  * 誤
+  ```
+  [global]
+            ：
+          ldap group suffix = ou=Groupss
+            ：
+  ```
+
+  * 正
+  ```
+  [global]
+            ：
+          ldap group suffix = ou=Groups
+            ：
+  ```
+
+
+* P104 : 9.5 バックエンドデータベースを切り替える  
+  smb.conf の `ldap group suffix` の指定が間違っている  
+  
+  * 誤
+  ```
+  [global]
+            ：
+          ldap group suffix = ou=Groupss
+            ：
+  ```
+
+  * 正
+  ```
+  [global]
+            ：
+          ldap group suffix = ou=Groups
+            ：
+  ```
